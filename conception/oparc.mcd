@@ -1,3 +1,4 @@
+
 réserve, 0N ATTRACTION, 0N VISITEUR: nombre de places, horaire de réservation
 ATTRACTION: nom public, capacité, heure d'ouverture, heure de fermeture, durée
 impacte, 11 INCIDENT, 0N ATTRACTION : date et heure de constat
