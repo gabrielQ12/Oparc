@@ -26,7 +26,7 @@ Oparc/
 |                         |         |-----router.js
 |                         |
 |                         |--------Scripts/
-|                         |         |-----creatSchema.sql
+|                         |         |-----createSchema.sql
 |                         |         |-----importData.js
 |                         |         |-----init_DB.sql
 |                         |         |-----init_deploy.sh
@@ -52,7 +52,7 @@ Oparc/
 |                         |         |-----router.js
 |                         |
 |                         |--------Scripts/
-|                         |         |-----creatSchema.sql
+|                         |         |-----createSchema.sql
 |                         |         |-----importData.js
 |                         |         |-----init_DB.sql
 |                         |         |-----init_deploy.sh

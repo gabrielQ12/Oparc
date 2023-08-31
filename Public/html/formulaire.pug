@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title O&apos;PARC - Formulaire de Contact - O&apos;PARC
+  body
+    h1 Formulaire de reservation O&apos;Parc
+    form(action='/submit', method='POST')
+      label(for='nom') Nom:
+      input#nom(type='text', name='nom', required='')
+      label(for='prénom') Pr&eacute;nom:
+      input#nom(type='text', name='prénom', required='')
+      label(for='email') E-mail:
+      input#email(type='email', name='email', required='')
+  label(for="horaire") Horaire :
+  select(name="horaire", required)
+    - for (let heure = 0; heure <= 23; heure++) 
+      - for (let minute = 0; minute < 60; minute += 30)
+        - const heureFormattee = heure.toString().padStart(2, '0'); //padStart permet de remplir une chaine de caractère avec une longueur définie
+        - const minuteFormattee = minute.toString().padStart(2, '0');
+        - const horaire = `${heureFormattee}:${minuteFormattee}`;
+        option(value=horaire)= horaire
+
+  button(type="submit") Réserver

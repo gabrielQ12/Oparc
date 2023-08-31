@@ -1,8 +1,8 @@
-Construire les arborescences:
+Construire les arborescences: FAIT
 
 RESA
 
-1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? 
+1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? : FAIT
 
 2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté.
 
@@ -19,7 +19,7 @@ RESA
 
 MAINTENANCE      
 
-1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? 
+1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? : FAIT
 
 2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté.
 
@@ -34,3 +34,5 @@ MAINTENANCE
      POST incident/id
      GET  incident/new
      POST incident/new
+
+/!\ Pensez a verifier comment gérer le double .env
