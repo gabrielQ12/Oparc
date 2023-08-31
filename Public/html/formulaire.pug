@@ -2,22 +2,46 @@ doctype html
 html
   head
     title O&apos;PARC - Formulaire de Contact - O&apos;PARC
-  body
-    h1 Formulaire de reservation O&apos;Parc
-    form(action='/submit', method='POST')
-      label(for='nom') Nom:
-      input#nom(type='text', name='nom', required='')
-      label(for='prénom') Pr&eacute;nom:
-      input#nom(type='text', name='prénom', required='')
-      label(for='email') E-mail:
-      input#email(type='email', name='email', required='')
-  label(for="horaire") Horaire :
-  select(name="horaire", required)
-    - for (let heure = 0; heure <= 23; heure++) 
-      - for (let minute = 0; minute < 60; minute += 30)
-        - const heureFormattee = heure.toString().padStart(2, '0'); //padStart permet de remplir une chaine de caractère avec une longueur définie
-        - const minuteFormattee = minute.toString().padStart(2, '0');
-        - const horaire = `${heureFormattee}:${minuteFormattee}`;
-        option(value=horaire)= horaire
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css")
 
-  button(type="submit") Réserver
+  body
+    section.section
+      div.container
+        div.columns.is-centered
+          div.column.is-4
+            h1.title Formulaire de reservation O&apos;Parc
+            form#reservation-form(action="/reservation", method="post")
+              div.field
+                label.label(for="nom") Nom :
+                div.control
+                  input.input(type="text", name="nom[]", required)
+
+              div.field
+                label.label(for="email") Email :
+                div.control
+                  input.input(type="email", name="email", required)
+
+              div.field
+                label.label(for="date") Date :
+                div.control
+                  input.input(type="date", name="date", required)
+
+              div.field
+                label.label(for="horaire") Horaire :
+                div.control
+                  div.select
+                    select(name="horaire", required)
+                      - for (let heure = 0; heure <= 23; heure++) 
+                        - for (let minute = 0; minute < 60; minute += 30)
+                          - const heureFormattee = heure.toString().padStart(2, '0');
+                          - const minuteFormattee = minute.toString().padStart(2, '0');
+                          - const horaire = `${heureFormattee}:${minuteFormattee}`;
+                          option(value=horaire)= horaire
+
+              div.field
+                div.control
+                  button.button.is-primary(type="submit") Réserver
+              div.field
+                div.control
+            button.button.is-primary#ajouter-form + Ajouter un accompagnant
+    script(src="NOM DU FICHIER JS DU SCRIPT POUR FORMULAIRE ET BOUCLER.js")

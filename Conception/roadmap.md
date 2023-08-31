@@ -4,9 +4,9 @@ RESA
 
 1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? : FAIT
 
-2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté.
+2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté. : FAIT
 
-3 || Monter les script avec les bon compte 
+3 || Monter les script avec les bon compte : FAIT
 
 4 || router / datamapper / model / vue 
 
@@ -21,9 +21,9 @@ MAINTENANCE
 
 1 || Decider des comptes admin / user / juste en lecture / juste en ecriture ? : FAIT
 
-2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté.
+2 || Construire la BDD ==> voir MCD ==> /!\ concepte 3NF a respecté. : FAIT
 
-3 || Monter les script avec les bon compte 
+3 || Monter les script avec les bon compte : FAIT
 
 4 || router / datamapper / model / vue 
 

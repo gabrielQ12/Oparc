@@ -25,17 +25,10 @@ Oparc/
 |                         |         |-----Services/
 |                         |         |-----router.js
 |                         |
-|                         |--------Scripts/
-|                         |         |-----createSchema.sql
-|                         |         |-----importData.js
-|                         |         |-----init_DB.sql
-|                         |         |-----init_deploy.sh
-|                         |
 |                         |--------Test/
 |                         |         |-----reservation_test.js
 |                         |
 |                         |--------.env
-|                         |--------index.js
 |                         |
 |                         |--------Package.json/
 |                         |
@@ -51,21 +44,21 @@ Oparc/
 |                         |         |-----Services/
 |                         |         |-----router.js
 |                         |
-|                         |--------Scripts/
-|                         |         |-----createSchema.sql
-|                         |         |-----importData.js
-|                         |         |-----init_DB.sql
-|                         |         |-----init_deploy.sh
-|                         |
 |                         |--------Test/
 |                         |         |-----maintenance_test.js
 |                         |
 |                         |--------.env
-|                         |--------index.js
 |                         |
 |                         |--------Package.json/
 |                         |
 |                         |--------Modulesjson/
 |
+|---------------------Scripts/
+|                         |
+|                         |--------create_table.sql
+|                         |--------seeding.sql
+|                         |--------init_DB.sql
+|                         |--------init_deploy.sh
 |---------gitignore
 |---------README.md
+|---------index.js
